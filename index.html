@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="parent-root">
+      <div class="main">
+        <div class="main-nav">
+          <div class="sort-by">
+            <label for="cars">Sort by:</label>
+            <select name="sort-food" id="sort-food">
+              <option value="price">Price</option>
+              <option value="food_name">Food name</option>
+            </select>
+          </div>
+          <div class="buy-and-cart-btn">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="cart-count">
+                <p>0</p>
+              </div>
+            </button>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="left-side">
+            <div class="item-list">
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/burger.jpg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Burger</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/pizza.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Pizza</h4>
+                    <p>Price: 500 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/singara.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Singara</h4>
+                    <p>Price: 20 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/futchka.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Futchka</h4>
+                    <p>Price: 120 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/noodles.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Noodles</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/noodles.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Noodles</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-item-btn">
+              <button>Add Food</button>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="empty-cart">
+              <img src="images/empty-cart.png" alt="" />
+              <p>Empty Cart</p>
+            </div>
+            <!-- <div class="item-list">
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/burger.jpg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Burger</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/pizza.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Pizza</h4>
+                    <p>Price: 500 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/singara.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Singara</h4>
+                    <p>Price: 20 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/futchka.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Futchka</h4>
+                    <p>Price: 120 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/noodles.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Noodles</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item">
+                <div class="item-image">
+                  <img src="images/noodles.webp" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name-price">
+                    <h4>Noodles</h4>
+                    <p>Price: 300 tk.</p>
+                  </div>
+                  <div class="add-btn">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
