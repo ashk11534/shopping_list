@@ -16,6 +16,33 @@
   <body>
     <div class="parent-root">
       <div class="main">
+        <div class="add-food-form">
+          <form action="">
+            <input
+              type="text"
+              name="input_food_name"
+              id="input_food_name"
+              placeholder="Enter food name"
+            />
+            <input
+              type="text"
+              name="input_image_link"
+              id="input_image_link"
+              placeholder="Enter image link"
+            />
+            <input
+              type="number"
+              name="input_food_price"
+              id="input_food_price"
+              placeholder="Enter food price"
+              min="0"
+            />
+            <div class="new-food-btn">
+              <button class="new-food-add-btn">Add</button>
+              <button class="new-food-cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
         <div class="main-nav">
           <div class="sort-by">
             <label for="cars">Sort by:</label>
